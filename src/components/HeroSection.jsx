@@ -36,7 +36,7 @@ export default function HeroSection() {
           </p>
           <div className="flex mt-6">
             <a href="#about">
-              <button className="cta group flex items-center px-8 py-3 text-2xl text-white bg-customGreen transition-all duration-1000 transform skew-x-[-15deg] shadow-[6px_6px_0_black] border-none cursor-pointer focus:outline-none hover:shadow-[7px_7px_0_#F8F8FF]">
+              <button className="cta group flex items-center px-8 py-3 text-2xl text-white bg-customGreen transition-all duration-1000 transform skew-x-[-15deg] shadow-[6px_6px_0_black] border-none cursor-pointer focus:outline-none">
                 <span className="span font-montserrat text-xl transform skew-x-[15deg]">
                   SELENGKAPNYA
                 </span>
