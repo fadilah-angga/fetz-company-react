@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -10,11 +11,7 @@ html {
   
 
   .gradient-text {
-    @apply bg-gradient-to-r from-customBlue to-customGreen bg-clip-text text-transparent;
-  }
-
-  .gradient-bg {
-    @apply bg-gradient-to-r from-customBlue to-customGreen;
+    @apply bg-gradient-to-r from-customWhite to-customGreen bg-clip-text text-transparent;
   }
 
   .gradient-underline {
@@ -28,7 +25,7 @@ html {
     left: 50%;
     width: 0;
     height: 2px; /* Ketebalan garis bawah */
-    background: linear-gradient(to right, #0172AF, #74FEBD); /* Warna gradien */
+    background: linear-gradient(to right, #F8F8FF, #74FEBD); /* Warna gradien */
     transition: width 0.3s ease, left 0.3s ease; /* Efek animasi */;
   }
   
@@ -44,3 +41,30 @@ html {
   .gradient-button svg {
     margin-left: 8px; /* Menambahkan jarak antara teks dan ikon panah */
   }
+
+  @keyframes color_anim {
+    0% {
+      fill: white;
+    }
+    50% {
+      fill: #0172AF;
+    }
+    100% {
+      fill: white;
+    }
+  }
+  
+  .cta:hover .three {
+    animation: color_anim 1s infinite 0.2s;
+  }
+  
+  .cta:hover .one {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.6s;
+  }
+  
+  .cta:hover .two {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.4s;
+  }
+  

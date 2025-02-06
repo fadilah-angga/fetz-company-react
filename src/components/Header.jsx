@@ -41,16 +41,17 @@ const Header = () => {
     <>
       <header
         className={`${
-          scrolled ? "bg-customWhite shadow-md" : "bg-transparent"
-        } text-customBlack p-4 fixed w-full top-0 left-0 z-50 transition-all duration-300`}
+          scrolled ? "shadow-md bg-black/40 backdrop-blur-md" : "bg-transparent"
+        } text-customWhite p-4 fixed w-full top-0 left-0 z-50 transition-all duration-300`}
       >
         <div className="container mx-auto flex justify-between items-center">
-          <h1 className="font-montserrat text-2xl font-semibold gradient-text">FETZ</h1>
+          <h1 className="font-montserrat text-2xl font-bold italic">F<span className="text-customGreen">E</span>TZ</h1>
           <nav>
-            <ul className="flex gap-7">
-              <li><a href="#about" className="font-montserrat gradient-underline">Tentang Kami</a></li>
-              <li><a href="#services" className="font-montserrat gradient-underline">Layanan</a></li>
-              <li><a href="#contact" className="font-montserrat gradient-underline">Kontak</a></li>
+            <ul className="flex gap-10">
+              <li><a href="#" className="font-jakarta pb-2 gradient-underline">Home</a></li>
+              <li><a href="#about" className="font-jakarta pb-2 gradient-underline">Tentang Kami</a></li>
+              <li><a href="#services" className="font-jakarta pb-2 gradient-underline">Layanan</a></li>
+              <li><a href="#contact" className="font-jakarta pb-2 gradient-underline">Kontak</a></li>
             </ul>
           </nav>
         </div>
@@ -60,7 +61,7 @@ const Header = () => {
       {showRocketButton && (
         <button
           onClick={handleRocketClick}
-          className="fixed bottom-4 gradient-bg right-4 bg-blue-600 z-20 text-white rounded-full p-4 shadow-lg hover:bg-blue-700 transition duration-300"
+          className="fixed bottom-4 gradient-bg right-4 bg-customGreen z-20 text-white rounded-full p-4 shadow-lg transition duration-300"
           aria-label="Scroll to top"
         >
           <FaRocket size={24} className="-rotate-45" />

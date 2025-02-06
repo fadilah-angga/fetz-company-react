@@ -4,11 +4,12 @@ export default {
   theme: {
     extend: {
       fontFamily: {
+        jakarta: ["Plus Jakarta Sans", "serif"],
         montserrat: ["Montserrat", "sans-serif"],
       },
       colors: {
         customBlue: "#0172AF", 
-        customGreen: "#74FEBD", 
+        customGreen: "#16C79A", 
         customWhite: "#F8F8FF", 
         customBlack: "#101720", 
       },
