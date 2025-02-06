@@ -36,8 +36,8 @@ export default function Contact() {
           {/* Kolom Kanan - Tombol Media Sosial */}
           <motion.div
             className="flex flex-row justify-center gap-6"
-            initial={{ x: 100, opacity: 0 }} // Mulai dari kanan
-            whileInView={{ x: 0, opacity: 1 }} // Muncul ke posisi semula
+            initial={{ y: 10, opacity: 0 }} // Mulai dari kanan
+            whileInView={{ y: 0, opacity: 1 }} // Muncul ke posisi semula
             viewport={{ once: true }}
             transition={{ duration: 1, ease: "easeInOut" }}
           >
