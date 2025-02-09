@@ -16,7 +16,7 @@ export default function Services() {
       <div className="container mx-auto text-center relative">
         {/* Judul */}
         <motion.h2
-          className="font-montserrat text-customWhite font-semibold text-3xl relative z-10"
+          className="font-jakarta text-customWhite font-bold text-3xl relative z-10"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
