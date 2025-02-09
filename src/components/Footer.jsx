@@ -1,13 +1,17 @@
-import { FaInstagram, FaEnvelope, FaWhatsapp, FaTiktok } from "react-icons/fa";
+import { FaInstagram, FaRegEnvelope, FaWhatsapp, FaTiktok } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="gradient-bg text-white p-6 font-montserrat">
-      <div className="container mx-auto my-5 grid md:grid-cols-5 gap-6 text-center md:text-left">
+    <footer className="bg-[#3A4554] text-white font-jakarta">
+      <div className="container mx-auto my-5 py-14 grid md:grid-cols-5 gap-6 text-center md:text-left">
         <div>
-          <h1 className="text-3xl font-semibold">FETZ</h1>
+          <h1 className="font-montserrat text-2xl font-bold italic">
+            F<span className="text-customGreen">E</span>TZ
+          </h1>
           <p className="text-sm mt-5">
-            Solusi digital untuk jasa pembuatan website yang cepat, mudah, desain modern dan fiturnya lengkap. Bangun website impianmu sekarang!
+            Solusi digital untuk jasa pembuatan website yang cepat, mudah,
+            desain modern dan fiturnya lengkap. Bangun website impianmu
+            sekarang!
           </p>
         </div>
         <div>
@@ -61,7 +65,7 @@ export default function Footer() {
               <FaInstagram size={24} />
             </a>
             <a href="mailto:info@example.com" className="hover:text-gray-300">
-              <FaEnvelope size={24} />
+              <FaRegEnvelope size={24} />
             </a>
             <a
               href="https://wa.me/yourphonenumber"
@@ -89,9 +93,11 @@ export default function Footer() {
         </div>
       </div>
 
-      <p className="text-center mt-4 text-sm">
-        &copy; 2025 Barenganaja. All rights reserved.
-      </p>
+      <div className="w-full bg-customGreen py-3 mt-6">
+        <p className="text-center text-sm">
+          &copy; 2025 Functional Ecosystem and Tech Zone. All rights reserved.
+        </p>
+      </div>
     </footer>
   );
 }
